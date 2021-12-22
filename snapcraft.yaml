@@ -1,0 +1,20 @@
+name: hello-linux
+version: '1.1.0'
+summary: Hello by PyCalc X	
+description: |
+  Calcom is an advanced graphing calculator application developed by the C.S.
+  tem at PyCalc X. Know more at www.pycalc.com/calcom.(Demo)
+confinement: devmode
+base: core20
+
+parts:
+  hello-linux:
+    plugin: python
+    python-version: python3
+    source: https://github.com/Prithwis-2023/hello-linux.git
+    stage-packages:
+      - python-six
+
+apps:
+  calcom-linux:
+    command: bin/offlineimap
