@@ -11,10 +11,9 @@ parts:
   hello-linux:
     plugin: python
     python-version: python3
-    source: https://github.com/Prithwis-2023/hello-linux.git
+    source: .
     stage-packages:
       - python-six
 
-apps:
-  calcom-linux:
-    command: bin/offlineimap
+build-packages:
+  - git
