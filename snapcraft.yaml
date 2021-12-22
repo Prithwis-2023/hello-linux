@@ -11,7 +11,7 @@ parts:
   hello-linux:
     plugin: python
     python-version: python3
-    source: .
+    source: https://github.com/Prithwis-2023/hello-linux.git
     stage-packages:
       - python-six
 
